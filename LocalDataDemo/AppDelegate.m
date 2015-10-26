@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "SCAppCache.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +16,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    //本地NSString缓存举例
+    [SCAppCache setStoreValue:@"hangzhou" forKey:StoreKeyCityId];
+    NSLog(@"%@",[SCAppCache storeValueForKey:StoreKeyCityId]);
+    
+    //本地对象的缓存同上，自己定义一个类就行
+    NSDictionary *dic=@{@"key1":@"value1"};
+    [SCAppCache setStoreObject:dic forKey:ObjectKeyMember];
+    
+    
+    NSDictionary *localDic=(NSDictionary *)[SCAppCache storeObjectForKey:ObjectKeyMember];
+    NSLog(@"%@",[localDic objectForKey:@"key1"]);
     return YES;
 }
 

@@ -15,6 +15,9 @@
 		64B321E01BDDCBEC00DB95BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64B321DE1BDDCBEC00DB95BA /* LaunchScreen.storyboard */; };
 		64B321EB1BDDCBEC00DB95BA /* LocalDataDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64B321EA1BDDCBEC00DB95BA /* LocalDataDemoTests.m */; };
 		64B321F61BDDCBEC00DB95BA /* LocalDataDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64B321F51BDDCBEC00DB95BA /* LocalDataDemoUITests.m */; };
+		64B322061BDDCC1400DB95BA /* SCAppCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 64B322051BDDCC1400DB95BA /* SCAppCache.m */; settings = {ASSET_TAGS = (); }; };
+		64B322151BDDCD9300DB95BA /* SCFileOper.m in Sources */ = {isa = PBXBuildFile; fileRef = 64B322141BDDCD9300DB95BA /* SCFileOper.m */; settings = {ASSET_TAGS = (); }; };
+		64B322181BDDCE0A00DB95BA /* NSObject+NotNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 64B322171BDDCE0A00DB95BA /* NSObject+NotNull.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		64B321F11BDDCBEC00DB95BA /* LocalDataDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalDataDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64B321F51BDDCBEC00DB95BA /* LocalDataDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalDataDemoUITests.m; sourceTree = "<group>"; };
 		64B321F71BDDCBEC00DB95BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64B322041BDDCC1400DB95BA /* SCAppCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAppCache.h; sourceTree = "<group>"; };
+		64B322051BDDCC1400DB95BA /* SCAppCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAppCache.m; sourceTree = "<group>"; };
+		64B322131BDDCD9300DB95BA /* SCFileOper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFileOper.h; sourceTree = "<group>"; };
+		64B322141BDDCD9300DB95BA /* SCFileOper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFileOper.m; sourceTree = "<group>"; };
+		64B322161BDDCE0A00DB95BA /* NSObject+NotNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NotNull.h"; sourceTree = "<group>"; };
+		64B322171BDDCE0A00DB95BA /* NSObject+NotNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NotNull.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		64B321CF1BDDCBEC00DB95BA /* LocalDataDemo */ = {
 			isa = PBXGroup;
 			children = (
+				64B322031BDDCBFF00DB95BA /* AppCache */,
 				64B321D31BDDCBEC00DB95BA /* AppDelegate.h */,
 				64B321D41BDDCBEC00DB95BA /* AppDelegate.m */,
 				64B321D61BDDCBEC00DB95BA /* ViewController.h */,
@@ -138,6 +148,19 @@
 				64B321F71BDDCBEC00DB95BA /* Info.plist */,
 			);
 			path = LocalDataDemoUITests;
+			sourceTree = "<group>";
+		};
+		64B322031BDDCBFF00DB95BA /* AppCache */ = {
+			isa = PBXGroup;
+			children = (
+				64B322161BDDCE0A00DB95BA /* NSObject+NotNull.h */,
+				64B322171BDDCE0A00DB95BA /* NSObject+NotNull.m */,
+				64B322131BDDCD9300DB95BA /* SCFileOper.h */,
+				64B322141BDDCD9300DB95BA /* SCFileOper.m */,
+				64B322041BDDCC1400DB95BA /* SCAppCache.h */,
+				64B322051BDDCC1400DB95BA /* SCAppCache.m */,
+			);
+			name = AppCache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,8 +293,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64B322181BDDCE0A00DB95BA /* NSObject+NotNull.m in Sources */,
+				64B322151BDDCD9300DB95BA /* SCFileOper.m in Sources */,
 				64B321D81BDDCBEC00DB95BA /* ViewController.m in Sources */,
 				64B321D51BDDCBEC00DB95BA /* AppDelegate.m in Sources */,
+				64B322061BDDCC1400DB95BA /* SCAppCache.m in Sources */,
 				64B321D21BDDCBEC00DB95BA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
