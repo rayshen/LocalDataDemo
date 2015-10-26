@@ -18,6 +18,7 @@
 		64B322061BDDCC1400DB95BA /* SCAppCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 64B322051BDDCC1400DB95BA /* SCAppCache.m */; settings = {ASSET_TAGS = (); }; };
 		64B322151BDDCD9300DB95BA /* SCFileOper.m in Sources */ = {isa = PBXBuildFile; fileRef = 64B322141BDDCD9300DB95BA /* SCFileOper.m */; settings = {ASSET_TAGS = (); }; };
 		64B322181BDDCE0A00DB95BA /* NSObject+NotNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 64B322171BDDCE0A00DB95BA /* NSObject+NotNull.m */; settings = {ASSET_TAGS = (); }; };
+		64B3221E1BDDD7D000DB95BA /* CHKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 64B3221D1BDDD7D000DB95BA /* CHKeychain.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		64B322141BDDCD9300DB95BA /* SCFileOper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFileOper.m; sourceTree = "<group>"; };
 		64B322161BDDCE0A00DB95BA /* NSObject+NotNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NotNull.h"; sourceTree = "<group>"; };
 		64B322171BDDCE0A00DB95BA /* NSObject+NotNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NotNull.m"; sourceTree = "<group>"; };
+		64B3221C1BDDD7D000DB95BA /* CHKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHKeychain.h; sourceTree = "<group>"; };
+		64B3221D1BDDD7D000DB95BA /* CHKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHKeychain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +156,8 @@
 		64B322031BDDCBFF00DB95BA /* AppCache */ = {
 			isa = PBXGroup;
 			children = (
+				64B3221C1BDDD7D000DB95BA /* CHKeychain.h */,
+				64B3221D1BDDD7D000DB95BA /* CHKeychain.m */,
 				64B322161BDDCE0A00DB95BA /* NSObject+NotNull.h */,
 				64B322171BDDCE0A00DB95BA /* NSObject+NotNull.m */,
 				64B322131BDDCD9300DB95BA /* SCFileOper.h */,
@@ -296,6 +301,7 @@
 				64B322181BDDCE0A00DB95BA /* NSObject+NotNull.m in Sources */,
 				64B322151BDDCD9300DB95BA /* SCFileOper.m in Sources */,
 				64B321D81BDDCBEC00DB95BA /* ViewController.m in Sources */,
+				64B3221E1BDDD7D000DB95BA /* CHKeychain.m in Sources */,
 				64B321D51BDDCBEC00DB95BA /* AppDelegate.m in Sources */,
 				64B322061BDDCC1400DB95BA /* SCAppCache.m in Sources */,
 				64B321D21BDDCBEC00DB95BA /* main.m in Sources */,

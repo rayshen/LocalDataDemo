@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "SCAppCache.h"
+#import "CHKeychain.h"
 @interface AppDelegate ()
 
 @end
@@ -27,7 +28,29 @@
     
     NSDictionary *localDic=(NSDictionary *)[SCAppCache storeObjectForKey:ObjectKeyMember];
     NSLog(@"%@",[localDic objectForKey:@"key1"]);
+    
+    [self GetUUID];
     return YES;
+}
+
+#pragma mark--获取设备UUID
+-(NSString*)GetUUID{
+    //根据key获得
+    if ([CHKeychain load:@"DEVICE_UUID"]) {
+        NSString *result = [CHKeychain load:@"DEVICE_UUID"];
+        NSLog(@"已存在手机UUID：%@",result);
+        return result;
+    }
+    else
+    {
+        CFUUIDRef puuid = CFUUIDCreate(nil);
+        CFStringRef uuidString = CFUUIDCreateString( nil, puuid );
+        NSString * result = (NSString *)CFBridgingRelease(CFStringCreateCopy( NULL, uuidString));
+        [CHKeychain save:@"DEVICE_UUID" data:result];
+        NSLog(@"初次创建手机UUID：%@",result);
+        return result;
+    }
+    return nil;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
